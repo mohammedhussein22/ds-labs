@@ -41,16 +41,17 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* About Section with Background Image */
+/* About Section - White Background with Black Text */
 #about {
-    background: url('data-science-background.jpg') no-repeat center center/cover;
-    color: white;
+    background-color: white;
+    color: black;
     text-align: center;
     padding: 100px 20px;
 }
 
 #about h2 {
     font-size: 36px;
+    color: black;
 }
 
 #about p {
@@ -58,9 +59,7 @@ nav ul li a:hover {
     max-width: 800px;
     margin: 10px auto;
     line-height: 1.6;
-    background: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
     padding: 15px;
-    border-radius: 8px;
 }
 
 /* Sections */
@@ -85,15 +84,44 @@ h2 {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Certifications */
-#certifications ul {
-    list-style: none;
-    padding: 0;
+/* Certifications Section */
+#certifications {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #dceeff;
 }
 
-#certifications ul li {
+.certification-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.certification {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 280px;
+}
+
+.certification img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.certification img:hover {
+    transform: scale(1.05);
+}
+
+.certification p {
     font-size: 18px;
-    margin: 10px 0;
+    margin-top: 10px;
+    font-weight: bold;
 }
 
 /* Contact */
