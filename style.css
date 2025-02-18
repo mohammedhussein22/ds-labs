@@ -114,9 +114,63 @@ footer {
 nav ul li:hover {
     background-color: #555;
 }
-/* Project Section */
+/* General Styles for Accessibility */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #000;
+}
+
+/* Header */
+header {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav a:hover,
+nav a:focus {
+    background: #444;
+}
+
+/* About Section */
+#about {
+    background: white;
+    color: black;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Resume Section */
+#resume {
+    background: #1E90FF; /* Dodger Blue */
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Portfolio Section */
 #portfolio {
-    background-color: #32CD32; /* Lime Green */
+    background: #32CD32; /* Lime Green */
     color: white;
     text-align: center;
     padding: 50px 20px;
@@ -128,34 +182,24 @@ nav ul li:hover {
     color: black;
     padding: 20px;
     margin: 20px auto;
-    max-width: 500px; /* Increased width for better readability */
+    max-width: 500px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     text-align: center;
 }
 
-/* Hover Effect */
-.project:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
-}
-
-/* Project Titles */
 .project h3 {
     font-size: 22px;
     margin-bottom: 10px;
 }
 
-/* Project Description */
 .project p {
     font-size: 16px;
 }
 
 /* Certifications Section */
 #certifications {
-    background-color: #FFD700; /* Gold */
-    color: black;
+    background: #FFD700; /* Gold */
     text-align: center;
     padding: 50px 20px;
 }
@@ -166,7 +210,6 @@ nav ul li:hover {
     flex-wrap: wrap;
     justify-content: center;
     gap: 25px;
-    padding: 20px;
 }
 
 /* Certification Cards */
@@ -176,29 +219,52 @@ nav ul li:hover {
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    max-width: 320px; /* Increased size for better visibility */
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    max-width: 320px;
 }
 
-/* Hover Effect */
-.certification:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
-}
-
-/* Certification Images */
 .certification img {
     width: 100%;
-    max-width: 300px; /* Bigger images for clarity */
+    max-width: 300px;
     height: auto;
-    display: block;
-    margin: 0 auto 10px auto;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Certification Titles */
 .certification p {
     font-size: 18px;
     font-weight: bold;
 }
+
+/* Contact Section */
+#contact {
+    background: #8A2BE2; /* Blue Violet */
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#contact a {
+    color: #FFD700;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .certification-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
