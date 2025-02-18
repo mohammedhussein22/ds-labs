@@ -132,7 +132,10 @@ section {
     font-weight: bold;
 }
 
-
+#contact {
+    text-align: center;
+    background-color: #FA8072
+    color: white;
 
 /* Footer */
 footer {
