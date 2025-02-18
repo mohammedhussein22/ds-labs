@@ -3,18 +3,24 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #dceeff; /* Light blue background */
     color: #333;
 }
 
-/* Header Styling */
+/* Header */
 header {
-    background: #333;
+    background-color: #000; /* Black header */
     color: white;
-    padding: 20px;
     text-align: center;
+    padding: 20px 0;
 }
 
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+/* Navigation */
 nav ul {
     list-style: none;
     padding: 0;
@@ -28,48 +34,84 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 18px;
 }
 
-/* Section Styling */
-section {
-    padding: 40px;
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* About Section with Background Image */
+#about {
+    background: url('data-science-background.jpg') no-repeat center center/cover;
+    color: white;
     text-align: center;
+    padding: 100px 20px;
 }
 
-#about, #portfolio, #contact {
+#about h2 {
+    font-size: 36px;
+}
+
+#about p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 10px auto;
+    line-height: 1.6;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #dceeff; /* Light blue background */
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Projects */
+.project {
     background: white;
+    padding: 20px;
     margin: 20px auto;
-    width: 80%;
-    border-radius: 10px;
+    max-width: 600px;
+    border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Portfolio Projects */
-.project {
-    background: #ddd;
-    margin: 10px auto;
-    padding: 15px;
-    border-radius: 5px;
-    width: 60%;
+/* Certifications */
+#certifications ul {
+    list-style: none;
+    padding: 0;
 }
 
-/* Contact Section */
-a {
+#certifications ul li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Contact */
+#contact a {
     color: #007BFF;
     text-decoration: none;
+    font-weight: bold;
 }
 
-a:hover {
+#contact a:hover {
     text-decoration: underline;
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    background: #333;
+    background-color: #000;
     color: white;
-    padding: 10px;
+    text-align: center;
+    padding: 10px 0;
     margin-top: 20px;
 }
-
