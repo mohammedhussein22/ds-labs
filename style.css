@@ -91,47 +91,47 @@ section {
     transform: scale(1.05);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
-
 /* Certifications Section */
 #certifications {
-    background-color: #ffecb3;
     text-align: center;
+    padding: 50px 20px;
+    background-color: #dceeff;
 }
 
-/* Certification Cards - Compact Size */
+.certification-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
 .certification {
-    display: inline-block;
-    width: 120px;
     background: white;
-    padding: 8px;
-    margin: 8px;
+    padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    font-size: 12px;
+    width: 280px;
 }
 
-.certification:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-/* Adjust image inside the certification box */
 .certification img {
-    width: 40px;
+    width: 100%;
     height: auto;
-    margin-bottom: 5px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
 }
 
-/* Certification Links */
-.certification a {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-    font-weight: bold;
-    font-size: 10px;
+.certification img:hover {
+    transform: scale(1.05);
 }
+
+.certification p {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
 
 /* Footer */
 footer {
