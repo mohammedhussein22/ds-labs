@@ -12,30 +12,46 @@ header {
     color: white;
     text-align: center;
     padding: 15px;
+/* Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333; /* Dark background */
+    padding: 10px 0;
+    z-index: 1000;
 }
 
-/* Navigation */
 nav ul {
     list-style: none;
+    margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+    text-align: center;
 }
 
-nav a {
-    color: white;
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
     text-decoration: none;
+    color: white;
     font-size: 18px;
-    padding: 10px;
-    border-radius: 5px;
-    transition: background 0.3s;
+    padding: 10px 15px;
+    transition: 0.3s ease-in-out;
 }
 
-nav a:hover,
-nav a:focus {
-    background: #444;
+nav ul li a:hover {
+    background-color: #1E90FF; /* Light blue hover effect */
+    border-radius: 5px;
 }
+
+/* Add padding to prevent content from hiding under the nav bar */
+body {
+    padding-top: 60px;
+}
+
 
 /* About Section */
 #about {
@@ -81,6 +97,15 @@ nav a:focus {
 .project p {
     font-size: 16px;
     user-select: text; /* Ensures project text is selectable */
+.project a, .certification a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.project a:hover, .certification a:hover {
+    color: #1E90FF;
+}
 }
 
 /* Certifications Section */
