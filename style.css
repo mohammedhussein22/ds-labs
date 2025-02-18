@@ -104,27 +104,30 @@ section {
     text-align: center;
 }
 
-/* Certification Cards */
+/* Certification Cards - Smaller Size */
 .certification {
     display: inline-block;
-    width: 300px;
+    width: 200px; /* Reduced size */
     background: white;
-    padding: 20px;
-    margin: 15px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 15px; /* Reduced padding */
+    margin: 10px;
+    border-radius: 10px; /* Slightly smaller radius */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
 }
 
 .certification:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* Contact Section */
-#contact {
-    background-color: #b2dfdb;
-    text-align: center;
+/* Make certification links look clean */
+.certification a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    font-weight: bold;
 }
 
 /* Footer */
