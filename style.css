@@ -3,7 +3,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #dceeff; /* Light blue background */
     color: #333;
 }
 
@@ -13,76 +12,85 @@ header {
     color: white;
     text-align: center;
     padding: 20px 0;
-    position: relative;
 }
 
-/* Menu Icon */
-#menu-icon {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 24px;
-    cursor: pointer;
-    background: white;
-    color: black;
-    padding: 8px 12px;
-    border-radius: 5px;
-    transition: 0.3s;
+header h1 {
+    margin: 0;
+    font-size: 28px;
 }
 
-#menu-icon:hover {
-    background: #ddd;
-}
-
-/* Side Menu */
-#side-menu {
-    position: fixed;
-    right: -200px; /* Hidden initially */
-    top: 0;
-    height: 100%;
-    width: 200px;
-    background-color: #333;
-    padding-top: 60px;
-    transition: 0.4s;
-}
-
-#side-menu ul {
-    list-style-type: none;
+/* Navigation */
+nav ul {
+    list-style: none;
     padding: 0;
 }
 
-#side-menu ul li {
-    padding: 15px;
-    text-align: center;
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-#side-menu ul li a {
+nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
 }
 
-#side-menu ul li a:hover {
-    background-color: #575757;
-    display: block;
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* About Section with Background Image */
+#about {
+    background: url('data-science-background.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#about h2 {
+    font-size: 36px;
+}
+
+#about p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 10px auto;
+    line-height: 1.6;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+    padding: 15px;
+    border-radius: 8px;
 }
 
 /* Sections */
 section {
     padding: 50px 20px;
     text-align: center;
+    background-color: #dceeff; /* Light blue background */
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Projects */
+.project {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Certifications Section */
+#certifications {
+    text-align: center;
+    padding: 50px 20px;
     background-color: #dceeff;
 }
 
-/* About Section */
-#about {
-    background-color: white;
-    color: black;
-    text-align: center;
-    padding: 100px 20px;
-}
-
-/* Certifications */
 .certification-container {
     display: flex;
     flex-wrap: wrap;
@@ -108,6 +116,23 @@ section {
 
 .certification img:hover {
     transform: scale(1.05);
+}
+
+.certification p {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Contact */
+#contact a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    text-decoration: underline;
 }
 
 /* Footer */
