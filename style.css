@@ -3,6 +3,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #000;
+    user-select: text; /* Allows text selection */
 }
 
 /* Header */
@@ -79,6 +80,7 @@ nav a:focus {
 
 .project p {
     font-size: 16px;
+    user-select: text; /* Ensures project text is selectable */
 }
 
 /* Certifications Section */
@@ -116,6 +118,7 @@ nav a:focus {
 .certification p {
     font-size: 18px;
     font-weight: bold;
+    user-select: text; /* Allows users to copy text */
 }
 
 /* Contact Section */
@@ -130,6 +133,7 @@ nav a:focus {
     color: #FFD700;
     font-size: 18px;
     text-decoration: underline;
+    user-select: text; /* Ensures links can be copied */
 }
 
 /* Footer */
@@ -138,6 +142,7 @@ footer {
     color: white;
     text-align: center;
     padding: 15px;
+    user-select: text;
 }
 
 /* Responsive Design */
