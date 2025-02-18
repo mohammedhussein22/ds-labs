@@ -107,14 +107,37 @@ section {
 /* Certification Cards - Smaller Size */
 .certification {
     display: inline-block;
-    width: 10px; /* Reduced size */
+    width: 120px; /* Adjusted for a smaller but readable size */
     background: white;
-    padding: 5px; /* Reduced padding */
-    margin: 10px;
-    border-radius: 10px; /* Slightly smaller radius */
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    padding: 8px; /* Slightly reduced padding */
+    margin: 8px;
+    border-radius: 8px; /* Smaller rounded corners */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
     text-align: center;
+    font-size: 12px; /* Smaller text */
+}
+
+.certification:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Adjust image inside the certification box */
+.certification img {
+    width: 40px; /* Smaller icon */
+    height: auto;
+    margin-bottom: 5px;
+}
+
+/* Keep links clean */
+.certification a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    font-weight: bold;
+    font-size: 10px; /* Smaller font */
+
 }
 
 .certification:hover {
