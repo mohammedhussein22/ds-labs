@@ -107,9 +107,9 @@ section {
 /* Certification Cards - Smaller Size */
 .certification {
     display: inline-block;
-    width: 200px; /* Reduced size */
+    width: 100px; /* Reduced size */
     background: white;
-    padding: 15px; /* Reduced padding */
+    padding: 5px; /* Reduced padding */
     margin: 10px;
     border-radius: 10px; /* Slightly smaller radius */
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
