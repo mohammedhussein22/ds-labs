@@ -1,183 +1,136 @@
-/* General Styles for Accessibility */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #000;
-    user-select: text; /* Allows text selection */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 /* Header */
 header {
-    background-color: #000;
+    background-color: #222;
     color: white;
+    padding: 20px;
     text-align: center;
-    padding: 15px;
-/* Navigation Bar */
-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #333; /* Dark background */
-    padding: 10px 0;
-    z-index: 1000;
 }
 
+/* Navigation */
 nav ul {
     list-style: none;
-    margin: 0;
     padding: 0;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
-    text-decoration: none;
     color: white;
+    text-decoration: none;
     font-size: 18px;
-    padding: 10px 15px;
-    transition: 0.3s ease-in-out;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #1E90FF; /* Light blue hover effect */
-    border-radius: 5px;
+    color: #1e90ff;
 }
 
-/* Add padding to prevent content from hiding under the nav bar */
-body {
-    padding-top: 60px;
+/* Section Styling */
+section {
+    padding: 50px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-
-/* About Section */
+/* About Section - Justified Text & Animated Border */
 #about {
-    background: white;
+    background-color: white;
     color: black;
-    padding: 50px 20px;
-    text-align: center;
+    text-align: justify;
+    border: 3px solid transparent;
+    position: relative;
+    animation: borderAnimation 3s infinite linear;
+}
+
+/* Border Animation */
+@keyframes borderAnimation {
+    0% {
+        border-color: #1e90ff;
+    }
+    50% {
+        border-color: #ff5733;
+    }
+    100% {
+        border-color: #1e90ff;
+    }
 }
 
 /* Resume Section */
 #resume {
-    background: #1E90FF; /* Dodger Blue */
-    color: white;
-    text-align: center;
-    padding: 50px 20px;
+    background-color: #e3f2fd;
 }
 
 /* Portfolio Section */
 #portfolio {
-    background: #32CD32; /* Lime Green */
-    color: white;
+    background-color: #d1c4e9;
     text-align: center;
-    padding: 50px 20px;
 }
 
 /* Project Cards */
 .project {
+    display: inline-block;
+    width: 300px;
     background: white;
-    color: black;
     padding: 20px;
-    margin: 20px auto;
-    max-width: 500px;
+    margin: 15px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.project h3 {
-    font-size: 22px;
-    margin-bottom: 10px;
-}
-
-.project p {
-    font-size: 16px;
-    user-select: text; /* Ensures project text is selectable */
-.project a, .certification a {
-    text-decoration: none;
-    color: black;
-    display: block;
-}
-
-.project a:hover, .certification a:hover {
-    color: #1E90FF;
-}
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
 
 /* Certifications Section */
 #certifications {
-    background: #FFD700; /* Gold */
+    background-color: #ffecb3;
     text-align: center;
-    padding: 50px 20px;
-}
-
-/* Certification Container */
-.certification-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
 }
 
 /* Certification Cards */
 .certification {
+    display: inline-block;
+    width: 300px;
     background: white;
-    padding: 15px;
+    padding: 20px;
+    margin: 15px;
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    max-width: 320px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.certification img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 10px;
-}
-
-.certification p {
-    font-size: 18px;
-    font-weight: bold;
-    user-select: text; /* Allows users to copy text */
+.certification:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
 
 /* Contact Section */
 #contact {
-    background: #8A2BE2; /* Blue Violet */
-    color: white;
+    background-color: #b2dfdb;
     text-align: center;
-    padding: 50px 20px;
-}
-
-#contact a {
-    color: #FFD700;
-    font-size: 18px;
-    text-decoration: underline;
-    user-select: text; /* Ensures links can be copied */
 }
 
 /* Footer */
 footer {
-    background: black;
+    background-color: #222;
     color: white;
     text-align: center;
-    padding: 15px;
-    user-select: text;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    .certification-container {
-        flex-direction: column;
-        align-items: center;
-    }
+    padding: 10px;
 }
