@@ -62,12 +62,14 @@ section {
 
 /* About Section */
 #about {
+    text-align: center;
     background-color: white;
     color: black;
 }
 
 /* Resume Section */
 #resume {
+    text-align: center;
     background-color: #1E90FF; /* Dodger Blue */
     color: white;
 }
