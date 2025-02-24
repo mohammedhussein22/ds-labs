@@ -50,7 +50,7 @@ section {
 
 /* About Section - Justified Text & Animated Border */
 #about {
-    background-color: #D4D4D4;
+    background-color: #FF6B6B;
     color: black;
     text-align: justify;
     border: 3px solid transparent;
@@ -68,12 +68,12 @@ section {
 /* Resume Section */
 #resume {
     text-align: center;
-    background-color: #737373;
+    background-color: #FFD166;
 }
 
 /* Portfolio Section */
 #portfolio {
-    background-color: #F5F5F5;
+    background-color: #06D6A0;
     text-align: center;
 }
 
@@ -97,7 +97,7 @@ section {
 #certifications {
     text-align: center;
     padding: 50px 20px;
-    background-color: #404040;
+    background-color: #118AB2;
 }
 
 .certification-container {
@@ -135,7 +135,7 @@ section {
 
 #contact {
     text-align: center;
-    background-color: #404040
+    background-color: #073B4C
     color: white;
 
 /* Footer */
