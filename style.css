@@ -39,6 +39,17 @@ nav ul li a:hover {
     color: #1e90ff;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a :hover {
+    text-color: grey;
+    text-decoration: underline;
+    text-decoration-color: grey;
+    text-decoration-offset: 1rem;
+
 /* Section Styling */
 section {
     padding: 50px;
