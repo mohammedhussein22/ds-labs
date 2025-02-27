@@ -77,6 +77,11 @@ section {
     text-align: center;
 }
 
+@keyframes borderAnimation {
+    0% { border-color: #1e90ff; }
+    50% { border-color: #ff5733; }
+    100% { border-color: #1e90ff; }
+}
 
 .project {
     display: inline-block;
