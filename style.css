@@ -50,7 +50,7 @@ section {
 
 
 #about {
-    background-color: #E0E1DD;
+    background-color: #FFCBA4;
     color: black;
     text-align: justify;
     border: 3px solid transparent;
@@ -68,12 +68,12 @@ section {
 
 #resume {
     text-align: center;
-    background-color: #FFD166;
+    background-color: #FF6B6B;
 }
 
 /
 #portfolio {
-    background-color: #06D6A0;
+    background-color: #C17C9B;
     text-align: center;
 }
 
@@ -98,7 +98,7 @@ section {
 #certifications {
     text-align: center;
     padding: 50px 20px;
-    background-color: #118AB2;
+    background-color: #2D9CDB;
 }
 
 .certification-container {
@@ -136,7 +136,7 @@ section {
 
 #contact {
     text-align: center;
-    background-color: #A0D8B3;
+    background-color: #1B3A4B;
     color: white;
 
 
